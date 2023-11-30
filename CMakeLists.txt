@@ -24,6 +24,7 @@ add_message_files(
   ChargerState.msg
   ScoutStatus.msg
   MissionIdentifier.msg
+  Sensor.msg
 )
 
 
