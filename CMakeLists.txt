@@ -37,6 +37,7 @@ add_service_files(
   GetLastWpReached.srv
   ParamTrigger.srv
   StartMapping.srv
+  SetFloat.srv
 )
 
 # Generate actions in the 'action' folder
