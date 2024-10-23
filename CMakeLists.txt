@@ -30,6 +30,7 @@ add_message_files(
 # Generate services in the 'srv' folder
 add_service_files(
   FILES
+  GetMissions.srv
   GetMissionList.srv
   GetMissionDetails.srv
   GetScheduleList.srv
