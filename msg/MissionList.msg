@@ -1,2 +1,2 @@
 # A named list of missions
-Mission[] missions
+kabam_msgs/Mission[] missions

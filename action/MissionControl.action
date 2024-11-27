@@ -2,7 +2,7 @@
 string mission_name
 string mission_id
 string mission_instance_id
-Task[] task_list
+kabam_msgs/Task[] task_list
 int8 loop_count
 
 ---
@@ -13,8 +13,8 @@ string status_desc
 string mission_name
 string mission_id
 string mission_instance_id
-TaskStatus mission_status
-TaskStatus[] task_status_list
+kabam_msgs/TaskStatus mission_status
+kabam_msgs/TaskStatus[] task_status_list
 int8 complete_pct
 int16 time_elapsed_sec
 int8 loop_count_req

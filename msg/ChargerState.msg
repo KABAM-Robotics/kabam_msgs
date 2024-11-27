@@ -11,6 +11,6 @@ int16 RCU_RESERVE_2 = 240
 int16 RCU_ERROR = 238
 int16 RCU_NOT_CONNECTED = 250
 
-Header header
+std_msgs/Header header
 int16 state
 string message

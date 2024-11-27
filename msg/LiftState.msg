@@ -1,5 +1,5 @@
 # lift_time records when the information in this message was generated
-time stamp
+builtin_interfaces/Time stamp
 
 string lift_name
 

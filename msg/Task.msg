@@ -2,4 +2,4 @@
 
 string name
 string type
-TaskParam parameter
+kabam_msgs/TaskParam parameter

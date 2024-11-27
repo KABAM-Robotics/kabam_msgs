@@ -1,56 +1,50 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.8)
 project(kabam_msgs)
 
+# ROS2 Flags
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
 
-## Find catkin macros and libraries
-find_package(catkin REQUIRED COMPONENTS
-  nav_msgs
-  std_msgs
-  message_generation
-  actionlib_msgs
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# find dependencies
+find_package(ament_cmake_auto REQUIRED)
+ament_auto_find_build_dependencies()
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/Waypoint.msg"
+  "msg/WaypointList.msg"
+  "msg/TaskParam.msg"
+  "msg/TaskStatus.msg"
+  "msg/Task.msg"
+  "msg/Mission.msg"
+  "msg/MissionList.msg"
+  "msg/ChargerState.msg"
+  "msg/ScoutStatus.msg"
+  "msg/MissionIdentifier.msg"
+  "msg/LiftState.msg"
+  "srv/GetMissionList.srv"
+  "srv/GetMissionDetails.srv"
+  "srv/GetScheduleList.srv"
+  "srv/StartMission.srv"
+  "srv/GetLastWpReached.srv"
+  "srv/ParamTrigger.srv"
+  "srv/StartMapping.srv"
+  "srv/SetFloat.srv"
+  "action/MissionControl.action"
+  "action/AutoDocking.action"
+  DEPENDENCIES std_msgs geometry_msgs builtin_interfaces
 )
 
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
-# Generate messages in the 'msg' folder
-add_message_files(
-  FILES
-  Waypoint.msg
-  WaypointList.msg
-  TaskParam.msg
-  TaskStatus.msg
-  Task.msg
-  Mission.msg
-  MissionList.msg
-  ChargerState.msg
-  ScoutStatus.msg
-  MissionIdentifier.msg
-  LiftState.msg
-)
-
-
-# Generate services in the 'srv' folder
-add_service_files(
-  FILES
-  GetMissionList.srv
-  GetMissionDetails.srv
-  GetScheduleList.srv
-  StartMission.srv
-  GetLastWpReached.srv
-  ParamTrigger.srv
-  StartMapping.srv
-)
-
-# Generate actions in the 'action' folder
-add_action_files(
-  FILES
-  MissionControl.action
-  AutoDocking.action
-)
-# Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  nav_msgs
-  std_msgs
-  actionlib_msgs
-)
-catkin_package()
+ament_export_dependencies(rosidl_default_runtime)
+ament_auto_package()
