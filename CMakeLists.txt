@@ -34,6 +34,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ParamTrigger.srv"
   "srv/StartMapping.srv"
   "srv/SetFloat.srv"
+  "srv/SaveMap.srv"
+  "srv/LoadMap.srv"
   "action/MissionControl.action"
   "action/AutoDocking.action"
   DEPENDENCIES std_msgs geometry_msgs builtin_interfaces
