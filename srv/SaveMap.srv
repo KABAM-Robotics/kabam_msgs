@@ -1,7 +1,8 @@
 string map_name
 ---
 uint8 RESULT_MAP_SAVED=0
-uint8 RESULT_MAP_NAME_ALREADY_EXISTS=1
-uint8 RESULT_UNDEFINED_FAILURE=2
+uint8 RESULT_INVALID_REQUEST=1
+uint8 RESULT_MAP_NAME_ALREADY_EXISTS=2
+uint8 RESULT_UNDEFINED_FAILURE=3
 uint8 result
 string map_id #if result success, this is the map_id of the saved map
