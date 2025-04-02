@@ -26,6 +26,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ScoutStatus.msg"
   "msg/MissionIdentifier.msg"
   "msg/LiftState.msg"
+  "msg/MapInfo.msg"
   "srv/GetMissionList.srv"
   "srv/GetMissionDetails.srv"
   "srv/GetScheduleList.srv"
