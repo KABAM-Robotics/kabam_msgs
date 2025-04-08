@@ -26,6 +26,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ScoutStatus.msg"
   "msg/MissionIdentifier.msg"
   "msg/LiftState.msg"
+  "msg/MapInfo.msg"
   "srv/GetMissionList.srv"
   "srv/GetMissionDetails.srv"
   "srv/GetScheduleList.srv"
@@ -34,6 +35,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ParamTrigger.srv"
   "srv/StartMapping.srv"
   "srv/SetFloat.srv"
+  "srv/SaveMap.srv"
+  "srv/LoadMap.srv"
   "action/MissionControl.action"
   "action/AutoDocking.action"
   DEPENDENCIES std_msgs geometry_msgs builtin_interfaces
