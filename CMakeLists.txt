@@ -39,9 +39,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetFloat.srv"
   "srv/SaveMap.srv"
   "srv/LoadMap.srv"
+  "srv/UpdateMap.srv"
   "action/MissionControl.action"
   "action/AutoDocking.action"
-  DEPENDENCIES std_msgs geometry_msgs builtin_interfaces
+  DEPENDENCIES std_msgs geometry_msgs builtin_interfaces sensor_msgs
 )
 
 if(BUILD_TESTING)
