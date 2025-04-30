@@ -25,6 +25,9 @@ add_message_files(
   ScoutStatus.msg
   MissionIdentifier.msg
   LiftState.msg
+  MapInfo.msg
+  MapMetaData.msg
+  MapList.msg
 )
 
 
@@ -38,6 +41,8 @@ add_service_files(
   GetLastWpReached.srv
   ParamTrigger.srv
   StartMapping.srv
+  SaveMap.srv
+  LoadMap.srv
 )
 
 # Generate actions in the 'action' folder
