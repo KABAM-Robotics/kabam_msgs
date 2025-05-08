@@ -40,6 +40,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SaveMap.srv"
   "srv/LoadMap.srv"
   "srv/UpdateMap.srv"
+  "srv/ManageWaypoint.srv"
   "action/MissionControl.action"
   "action/AutoDocking.action"
   DEPENDENCIES std_msgs geometry_msgs builtin_interfaces sensor_msgs
