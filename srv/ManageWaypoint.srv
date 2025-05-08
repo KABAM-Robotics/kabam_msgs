@@ -1,10 +1,5 @@
-uint8 REQUEST_TYPE_CREATE_WAYPOINT=0 #use the entire waypoint_info to create new waypoint (id can be blank)
-uint8 REQUEST_TYPE_UPDATE_WAYPOINT_NAME=1 #use the waypoint_id to pick and rename the waypoint
-uint8 REQUEST_TYPE_UPDATE_WAYPOINT_POSE=2 #use the waypoint_id to pick and update the pose of the waypoint
-uint8 REQUEST_TYPE_GET_WAYPOINT=3 #take ID and return the waypoint details
-uint8 REQUEST_TYPE_DELETE_WAYPOINT=4
-kabam_msgs/waypoint waypoint_info
-uint8 request_type
+kabam_msgs/waypoint waypoint_info #ID can be blank if creating new waypoint
+bool delete
 ---
 uint8 RESULT_WAYPOINT_CREATED=0
 uint8 RESULT_WAYPOINT_NAME_ALREADY_EXISTS_IN_SAME_MAP=1
@@ -13,7 +8,5 @@ uint8 RESULT_WAYPOINT_NOT_FOUND=3
 uint8 RESULT_WAYPOINT_DELETED=4
 uint8 RESULT_UNDEFINED_FAILURE=5
 uint8 result
-kabam_msgs/waypoint waypoint_response 
-# for new waypoint the waypoint_response return all data with generated id
-# for get waypoint waypoint_response return all data
+kabam_msgs/waypoint waypoint_response #return with ID in creating waypoint
 
