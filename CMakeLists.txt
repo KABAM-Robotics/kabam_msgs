@@ -44,6 +44,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetWaypoint.srv"
   "action/MissionControl.action"
   "action/AutoDocking.action"
+  "action/PabxAnnouncement.action"
   DEPENDENCIES std_msgs geometry_msgs builtin_interfaces sensor_msgs
 )
 

@@ -1,0 +1,17 @@
+# Goal definition
+
+uint32 customer_extension
+uint32 announcemnt_device_extension
+string requester_name
+string robot_id
+
+---
+# Result definition
+# either of "announcement success" or "announcement failed"
+string announcement_result
+
+---
+
+# Feedback definition
+
+string call_status
