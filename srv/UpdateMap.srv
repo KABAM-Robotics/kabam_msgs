@@ -1,6 +1,6 @@
 string map_id
 sensor_msgs/Image updated_image
-string new_map_name
+string new_map_label
 bool set_archive
 bool delete_map
 ---
