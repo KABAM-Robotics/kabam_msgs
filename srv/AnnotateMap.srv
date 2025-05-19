@@ -1,1 +1,3 @@
 kabam_msgs/MapAnnotation[] annotations
+---
+bool response # placeholder
