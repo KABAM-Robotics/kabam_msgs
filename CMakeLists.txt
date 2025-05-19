@@ -42,6 +42,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SaveMap.srv"
   "srv/LoadMap.srv"
   "srv/UpdateMap.srv"
+  "srv/GetWaypoint.srv"
+  "srv/ManageWaypoint.srv"
   "srv/AnnotateMap.srv"
   "action/MissionControl.action"
   "action/AutoDocking.action"
