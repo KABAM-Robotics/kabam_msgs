@@ -1,0 +1,1 @@
+kabam_msgs/MapAnnotation[] annotations

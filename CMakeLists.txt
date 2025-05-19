@@ -29,6 +29,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MapInfo.msg"
   "msg/MapMetaData.msg"
   "msg/MapList.msg"
+  "msg/MapAnnotation.msg"
+  "msg/MapAnnotationArray.msg"
   "srv/GetMissionList.srv"
   "srv/GetMissionDetails.srv"
   "srv/GetScheduleList.srv"
@@ -40,13 +42,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SaveMap.srv"
   "srv/LoadMap.srv"
   "srv/UpdateMap.srv"
-  "srv/ManageWaypoint.srv"
-  "srv/GetWaypoint.srv"
+  "srv/AnnotateMap.srv"
   "action/MissionControl.action"
   "action/AutoDocking.action"
-  DEPENDENCIES std_msgs geometry_msgs builtin_interfaces sensor_msgs
+  DEPENDENCIES std_msgs geometry_msgs builtin_interfaces sensor_msgs diagnostic_msgs
 )
 
+# Testing
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   set(ament_cmake_copyright_FOUND TRUE)
