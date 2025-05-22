@@ -43,6 +43,9 @@ add_service_files(
   StartMapping.srv
   SaveMap.srv
   LoadMap.srv
+  UpdateMap.srv
+  ManageWaypoint.srv
+  GetWaypoint.srv
 )
 
 # Generate actions in the 'action' folder
