@@ -1,6 +1,7 @@
 uint8 TYPE_VISUAL=0
-uint8 TYPE_OBSTACLE =1  #no_go_zones
+uint8 TYPE_OBSTACLE =1  # no_go_zones
 uint8 TYPE_SPEED_LIMIT=2 # speed filter
+uint8 TYPE_PRESET=3 # preset_filter
 
 uint8 SHAPE_LINE=10
 uint8 SHAPE_CIRCLE=11
