@@ -1,3 +1,3 @@
 # A list of named waypoints
 
-Waypoint[] waypoints
+kabam_msgs/Waypoint[] waypoints
