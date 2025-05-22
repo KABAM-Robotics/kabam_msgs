@@ -1,11 +1,12 @@
 string map_id
 sensor_msgs/Image updated_image
-string new_map_name
+string new_map_label
 bool set_archive
 bool delete_map
 ---
 uint8 RESULT_MAP_UPDATED=0
-uint8 RESULT_MAP_DOES_NOT_EXIST=1
-uint8 RESULT_INVALID_REQUEST=2
+uint8 RESULT_MAP_DELETED=1
+uint8 RESULT_MAP_DOES_NOT_EXIST=2
+uint8 RESULT_INVALID_REQUEST=3
 uint8 RESULT_UNDEFINED_FAILURE=4
 uint8 result
