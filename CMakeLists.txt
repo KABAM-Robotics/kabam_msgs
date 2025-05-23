@@ -18,7 +18,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Waypoint.msg"
   "msg/WaypointList.msg"
   "msg/Waypoint2.msg"
-  "msg/Waypiont2List.msg"
+  "msg/Waypoint2List.msg"
   "msg/TaskParam.msg"
   "msg/TaskStatus.msg"
   "msg/Task.msg"
