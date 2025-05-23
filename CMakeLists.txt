@@ -17,8 +17,8 @@ ament_auto_find_build_dependencies()
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Waypoint.msg"
   "msg/WaypointList.msg"
-  "msg/Waypoint2.msg"
-  "msg/Waypoint2List.msg"
+  "msg/MapWaypoint.msg"
+  "msg/MapWaypointList.msg"
   "msg/TaskParam.msg"
   "msg/TaskStatus.msg"
   "msg/Task.msg"
