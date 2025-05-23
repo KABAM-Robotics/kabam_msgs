@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   message_generation
   actionlib_msgs
+  sensor_msgs
 )
 
 
@@ -16,6 +17,8 @@ add_message_files(
   FILES
   Waypoint.msg
   WaypointList.msg
+  Waypoint2.msg
+  Waypoint2List.msg
   TaskParam.msg
   TaskStatus.msg
   Task.msg
@@ -43,6 +46,9 @@ add_service_files(
   StartMapping.srv
   SaveMap.srv
   LoadMap.srv
+  UpdateMap.srv
+  ManageWaypoint.srv
+  GetWaypoint.srv
 )
 
 # Generate actions in the 'action' folder
@@ -57,5 +63,6 @@ generate_messages(
   nav_msgs
   std_msgs
   actionlib_msgs
+  sensor_msgs
 )
 catkin_package()

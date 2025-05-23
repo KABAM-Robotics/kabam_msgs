@@ -11,6 +11,7 @@
   <url type="website">https://kabam.ai/</url>
 
   <buildtool_depend>catkin</buildtool_depend>
+  <depend>sensor_msgs</depend>
   <build_depend>nav_msgs</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>std_msgs</build_depend>
