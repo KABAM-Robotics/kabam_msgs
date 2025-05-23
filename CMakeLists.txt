@@ -17,8 +17,8 @@ add_message_files(
   FILES
   Waypoint.msg
   WaypointList.msg
-  Waypoint2.msg
-  Waypoint2List.msg
+  MapWaypoint.msg
+  MapWaypointList.msg
   TaskParam.msg
   TaskStatus.msg
   Task.msg
