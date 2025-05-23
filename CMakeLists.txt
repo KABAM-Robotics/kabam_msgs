@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   message_generation
   actionlib_msgs
+  sensor_msgs
 )
 
 
@@ -35,5 +36,6 @@ generate_messages(
   nav_msgs
   std_msgs
   actionlib_msgs
+  sensor_msgs
 )
 catkin_package()
