@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   actionlib_msgs
   sensor_msgs
+  diagnostic_msgs
 )
 
 
