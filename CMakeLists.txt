@@ -65,5 +65,6 @@ generate_messages(
   std_msgs
   actionlib_msgs
   sensor_msgs
+  diagnostic_msgs
 )
 catkin_package()
