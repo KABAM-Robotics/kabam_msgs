@@ -7,7 +7,7 @@ uint8 SHAPE_CIRCLE=11
 uint8 SHAPE_POLYGON=12
 
 uint8 type
-std_msgs/String ns
+string ns
 uint8 shape
 geometry_msgs/Polygon[] coords
 diagnostic_msgs/KeyValue[] params
