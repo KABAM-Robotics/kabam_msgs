@@ -32,6 +32,8 @@ add_message_files(
   MapInfo.msg
   MapMetaData.msg
   MapList.msg
+  MapAnnotation.msg
+  MapAnnotationArray.msg
 )
 
 
