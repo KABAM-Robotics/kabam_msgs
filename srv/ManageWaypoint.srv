@@ -1,4 +1,4 @@
-kabam_msgs/Waypoint waypoint_info #ID can be blank if creating new waypoint
+kabam_msgs/MapWaypoint waypoint_info #ID can be blank if creating new waypoint
 bool delete_waypoint
 ---
 uint8 RESULT_WAYPOINT_CREATED=0
@@ -9,5 +9,5 @@ uint8 RESULT_WAYPOINT_NOT_FOUND=4
 uint8 RESULT_WAYPOINT_DELETED=5
 uint8 RESULT_UNDEFINED_FAILURE=6
 uint8 result
-kabam_msgs/Waypoint waypoint_response #return with ID in creating waypoint
+kabam_msgs/MapWaypoint waypoint_response #return with ID in creating waypoint
 

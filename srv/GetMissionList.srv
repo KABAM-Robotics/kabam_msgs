@@ -1,2 +1,2 @@
 ---
-kabam_msgs/MissionIdentifier[] mission_list
+kabam_msgs/Mission[] mission_list

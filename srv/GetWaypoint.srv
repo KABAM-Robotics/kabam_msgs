@@ -1,4 +1,4 @@
 string map_id 
 string waypoint_id #if not given return all waypoint in map_id
 ---
-kabam_msgs/WaypointList waypoints
+kabam_msgs/MapWaypointList waypoints

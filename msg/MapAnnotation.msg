@@ -8,6 +8,6 @@ uint8 SHAPE_POLYGON=12
 
 uint8 type
 std_msgs/String ns
-uint8[] shapes
+uint8 shape
 geometry_msgs/Polygon[] coords
 diagnostic_msgs/KeyValue[] params
