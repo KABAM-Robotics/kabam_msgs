@@ -1,3 +1,12 @@
+uint8 TYPE_VISUAL=0
+uint8 TYPE_OBSTACLE =1  # no_go_zones
+uint8 TYPE_SPEED_LIMIT=2 # speed filter
+uint8 TYPE_PRESET=3 # preset_filter
+
+uint8 SHAPE_LINE=10
+uint8 SHAPE_CIRCLE=11
+uint8 SHAPE_POLYGON=12
+
 uint8 type
 string ns
 uint8 shape
