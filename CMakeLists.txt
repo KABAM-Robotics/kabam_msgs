@@ -28,6 +28,7 @@ add_message_files(
   ScoutStatus.msg
   MissionIdentifier.msg
   LiftState.msg
+  LiftStateArray.msg
   MapInfo.msg
   MapMetaData.msg
   MapList.msg
