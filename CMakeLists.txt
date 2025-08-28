@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   actionlib_msgs
   sensor_msgs
+  diagnostic_msgs
 )
 
 
@@ -32,6 +33,8 @@ add_message_files(
   MapInfo.msg
   MapMetaData.msg
   MapList.msg
+  MapAnnotation.msg
+  MapAnnotationArray.msg
 )
 
 
@@ -65,5 +68,6 @@ generate_messages(
   std_msgs
   actionlib_msgs
   sensor_msgs
+  diagnostic_msgs
 )
 catkin_package()
