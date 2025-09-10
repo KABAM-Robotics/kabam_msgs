@@ -12,6 +12,7 @@ string status_desc
 #feedback
 string mission_name
 string mission_id
+string task_id
 string mission_instance_id
 TaskStatus mission_status
 TaskStatus[] task_status_list

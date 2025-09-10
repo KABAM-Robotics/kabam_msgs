@@ -2,4 +2,5 @@
 
 string name
 string type
+string task_id
 TaskParam parameter
