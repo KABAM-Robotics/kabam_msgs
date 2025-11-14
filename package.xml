@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>kabam_msgs</name>
-  <version>0.0.0</version>
+  <version>1.0.0</version>
   <description>The kabam_msgs package has custom ROS message, service and action interfaces used at KABAM</description>
 
   <maintainer email="swarooph@kabam.ai">Swarooph Seshadri</maintainer>
